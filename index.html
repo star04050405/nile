@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>尼罗河的倒影 · 埃及深度人文游学</title>
+<meta name="theme-color" content="#0D1626">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  background:#0D1626;color:#F2EBDC;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;
+  min-height:100vh;overflow-x:hidden;
+}
+.serif{font-family:"Noto Serif SC",Georgia,serif}
+.en{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('img/hero.png') center 30%/cover no-repeat}
+.hero .bg:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,22,38,.25) 0%,rgba(13,22,38,.05) 40%,rgba(13,22,38,.92) 82%,#0D1626 100%)}
+.hero .in{position:relative;padding:0 24px 40px;text-align:center}
+.hero .tag{display:inline-block;font-size:11.5px;letter-spacing:.42em;color:#D9B36C;border:1px solid rgba(217,179,108,.45);padding:7px 16px 6px;margin-bottom:22px}
+.hero h1{font-family:"Noto Serif SC",Georgia,serif;font-weight:900;font-size:clamp(40px,11vw,64px);color:#F6EEDD;letter-spacing:.06em;line-height:1.22;text-shadow:0 4px 30px rgba(0,0,0,.5)}
+.hero h1 .gd{color:#E8C36A}
+.hero .sub{margin-top:14px;font-family:"Noto Serif SC",serif;font-size:clamp(14.5px,3.8vw,17px);color:rgba(242,235,220,.88);letter-spacing:.24em}
+.hero .enline{margin-top:10px;font-size:14px;color:rgba(217,179,108,.8);letter-spacing:.3em}
+.hero .dates{display:flex;gap:10px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.hero .pill{font-size:13px;letter-spacing:.1em;color:#0D1626;background:linear-gradient(135deg,#EFC878,#C99B4F);padding:9px 18px;border-radius:999px;font-weight:700}
+.hero .pill.ghost{background:transparent;color:#EFC878;border:1px solid rgba(239,200,120,.55);font-weight:600}
+.hero .cta{margin-top:26px;display:inline-block;background:linear-gradient(135deg,#EFC878,#C99B4F);color:#0D1626;font-weight:800;font-size:15px;letter-spacing:.14em;padding:15px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 34px rgba(232,195,106,.3)}
+.hero .scroll{margin-top:26px;font-size:11px;letter-spacing:.4em;color:rgba(242,235,220,.5)}
+/* ---------- section ---------- */
+section{padding:64px 0}
+.kicker{text-align:center;font-size:11px;letter-spacing:.46em;color:#D9B36C;margin-bottom:14px}
+h2.st{font-family:"Noto Serif SC",serif;font-weight:900;font-size:clamp(24px,6.4vw,30px);color:#F6EEDD;text-align:center;letter-spacing:.08em}
+h2.st em{font-style:normal;color:#E8C36A}
+.lead{text-align:center;margin:18px auto 0;max-width:480px;font-family:"Noto Serif SC",serif;font-size:15.5px;line-height:2.15;color:rgba(242,235,220,.82);letter-spacing:.05em}
+.lead b{color:#EFC878;font-weight:700}
+.divider{width:44px;height:1px;background:linear-gradient(90deg,transparent,#D9B36C,transparent);margin:26px auto 0}
+/* concept numbers */
+.concepts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.concept{width:186px;background:rgba(255,255,255,.045);border:1px solid rgba(217,179,108,.16);border-radius:16px;padding:22px 16px;text-align:center}
+.concept .n{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:34px;color:#E8C36A;line-height:1}
+.concept .t{margin-top:10px;font-family:"Noto Serif SC",serif;font-size:14.5px;font-weight:700;color:#F6EEDD;letter-spacing:.12em}
+.concept .d{margin-top:7px;font-size:12px;line-height:1.8;color:rgba(242,235,220,.6)}
+/* route */
+.route-cities{display:flex;align-items:center;justify-content:center;gap:14px;margin:36px 0 8px;flex-wrap:wrap}
+.rc{font-family:"Noto Serif SC",serif;font-size:17px;font-weight:900;letter-spacing:.18em;color:#F6EEDD}
+.rc small{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;font-size:12px;color:#D9B36C;letter-spacing:.22em;margin-top:3px;text-align:center}
+.arrow{color:#D9B36C;font-size:18px;opacity:.85}
+.days{margin-top:44px;position:relative}
+.days:before{content:'';position:absolute;left:27px;top:8px;bottom:8px;width:1px;background:linear-gradient(180deg,rgba(217,179,108,.5),rgba(217,179,108,.1))}
+.fig{margin:16px 0 22px;border-radius:14px;overflow:hidden;border:1px solid rgba(217,179,108,.25);box-shadow:0 14px 40px rgba(0,0,0,.45)}
+.fig img{width:100%;display:block}
+.fig figcaption{padding:9px 14px;font-size:11px;letter-spacing:.22em;color:rgba(242,235,220,.6);background:rgba(217,179,108,.08)}
+.day{position:relative;display:flex;gap:18px;padding:0 0 26px 0}
+.day .dn{flex:none;width:56px;height:56px;border-radius:50%;background:#13233E;border:1px solid rgba(217,179,108,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1}
+.day .dn b{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;color:#EFC878;line-height:1}
+.day .dn span{font-size:9px;letter-spacing:.2em;color:rgba(242,235,220,.5);margin-top:2px}
+.day .dc{flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:16px 18px}
+.day .pl{font-family:"Noto Serif SC",serif;font-size:15.5px;font-weight:900;color:#F6EEDD;letter-spacing:.08em}
+.day .pl small{font-size:11px;color:#D9B36C;letter-spacing:.2em;margin-left:8px;font-weight:500}
+.day .ac{margin-top:8px;font-size:13.5px;line-height:1.9;color:rgba(242,235,220,.78)}
+.day .le{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.14em;color:#0D1626;background:linear-gradient(135deg,#EFC878,#C99B4F);border-radius:999px;padding:4px 12px;font-weight:700}
+.day-img{margin-top:14px;border-radius:12px;width:100%;display:block}
+/* masters */
+.masters{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.master{flex:1;min-width:230px;background:rgba(255,255,255,.045);border:1px solid rgba(217,179,108,.16);border-radius:18px;padding:24px 20px;text-align:center}
+.master .avatar{width:64px;height:64px;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:26px;background:linear-gradient(135deg,#EFC878,#C99B4F);color:#0D1626}
+.master .rt{margin-top:14px;font-size:11px;letter-spacing:.34em;color:#D9B36C}
+.master .nm{margin-top:8px;font-family:"Noto Serif SC",serif;font-size:19px;font-weight:900;color:#F6EEDD;letter-spacing:.14em}
+.master .ds{margin-top:9px;font-size:12.5px;line-height:1.9;color:rgba(242,235,220,.65)}
+.lectures{margin-top:26px}
+.lec{display:flex;gap:16px;align-items:flex-start;padding:16px 4px;border-bottom:1px solid rgba(217,179,108,.13)}
+.lec .ln{flex:none;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;color:#D9B36C;width:34px;line-height:1.2}
+.lec .lt{font-family:"Noto Serif SC",serif;font-size:15px;font-weight:700;color:#F6EEDD;letter-spacing:.06em}
+.lec .ld{margin-top:5px;font-size:12.5px;line-height:1.8;color:rgba(242,235,220,.6)}
+/* tours */
+.tours{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.tour{flex:1;min-width:250px;border-radius:20px;overflow:hidden;border:1px solid rgba(217,179,108,.3);background:rgba(255,255,255,.04)}
+.tour .th{padding:20px 20px 16px;background:linear-gradient(150deg,rgba(239,200,120,.14),rgba(239,200,120,.03))}
+.tour .tn{font-size:12px;letter-spacing:.3em;color:#EFC878;font-weight:700}
+.tour .td{margin-top:8px;font-family:"Noto Serif SC",serif;font-size:21px;font-weight:900;color:#F6EEDD;letter-spacing:.06em}
+.tour .tb{padding:16px 20px 20px}
+.tour .li{display:flex;gap:9px;font-size:13px;line-height:1.7;color:rgba(242,235,220,.8);margin-top:8px}
+.tour .li:before{content:'✦';color:#D9B36C;font-size:11px;flex:none;margin-top:1px}
+.eb{margin:26px auto 0;max-width:420px;text-align:center;border:1px dashed rgba(239,200,120,.5);border-radius:16px;padding:16px 20px}
+.eb .e1{font-size:13px;color:#EFC878;letter-spacing:.12em;font-weight:700}
+.eb .e2{margin-top:6px;font-size:12px;color:rgba(242,235,220,.62)}
+.eb .e2 b{color:#F6EEDD}
+/* cta */
+.cta-sec{text-align:center}
+.cta-sec .big{font-family:"Noto Serif SC",serif;font-size:clamp(22px,6vw,27px);font-weight:900;color:#F6EEDD;line-height:1.7;letter-spacing:.08em}
+.cta-sec .big em{font-style:normal;color:#EFC878}
+.copybtn{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:linear-gradient(135deg,#EFC878,#C99B4F);color:#0D1626;border:0;font-weight:800;font-size:15.5px;letter-spacing:.14em;padding:17px 38px;border-radius:999px;cursor:pointer;font-family:inherit;box-shadow:0 12px 40px rgba(232,195,106,.32)}
+.copybtn:active{transform:scale(.97)}
+.cta-sec .h{margin-top:16px;font-size:12.5px;color:rgba(242,235,220,.55);letter-spacing:.06em}
+footer{padding:44px 0 60px;text-align:center}
+footer .f1{font-size:11px;letter-spacing:.4em;color:rgba(242,235,220,.4)}
+footer .f2{margin-top:10px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:15px;color:rgba(217,179,108,.65);letter-spacing:.14em}
+/* toast */
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:rgba(239,200,120,.96);color:#0D1626;font-size:13.5px;font-weight:700;letter-spacing:.08em;padding:12px 24px;border-radius:999px;opacity:0;transition:.3s;z-index:99;pointer-events:none;box-shadow:0 12px 34px rgba(0,0,0,.4)}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="bg"></div>
+  <div class="in">
+    <span class="tag">洞穴文化 · 文明溯源经典线路 再升级</span>
+    <h1 class="serif">尼罗河<span class="gd">的</span>倒影</h1>
+    <div class="sub serif">神权 · 艺术 · 帝国的不朽</div>
+    <div class="enline">REFLECTIONS OF THE NILE</div>
+    <div class="dates">
+      <span class="pill">跨年团 12.26 — 1.4</span>
+      <span class="pill ghost">春节团 2.9 — 2.18</span>
+    </div>
+    <a class="cta" href="#tours">查看团期 · 早鸟减 ¥1,000</a>
+    <div class="scroll">SCROLL · 沿尼罗河逆流而上</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">WHY EGYPT</div>
+    <h2 class="st serif">为什么是<em>埃及</em></h2>
+    <p class="lead serif">
+      五千年前，人类把对永恒的想象<b>凿进石头</b>。<br>
+      金字塔不是奇迹的终点，而是理解一个文明的<b>入口</b>——<br>
+      神权如何塑造帝国，艺术如何对抗遗忘，<br>
+      而尼罗河，如何让一切倒影不朽。
+    </p>
+    <div class="divider"></div>
+    <div class="concepts">
+      <div class="concept"><div class="n">10</div><div class="t">天 · 沿河而上</div><div class="d">开罗 → 卢克索 → 阿斯旺<br>从三角洲到第一瀑布</div></div>
+      <div class="concept"><div class="n">2</div><div class="t">位学术导师</div><div class="d">世界史 × 艺术史<br>双线并讲，互为注脚</div></div>
+      <div class="concept"><div class="n">4</div><div class="t">场深度讲座</div><div class="d">从神权到象形文字<br>从建筑到埃及学本身</div></div>
+      <div class="concept"><div class="n">30+</div><div class="t">处遗址神庙</div><div class="d">金字塔 · 帝王谷 · 卡纳克<br>阿布辛贝 · 菲莱 …</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="kicker">THE ROUTE</div>
+    <h2 class="st serif">沿河<em>逆流而上</em></h2>
+    <div class="route-cities">
+      <div class="rc">开罗<small>CAIRO</small></div>
+      <span class="arrow">→</span>
+      <div class="rc">卢克索<small>LUXOR</small></div>
+      <span class="arrow">→</span>
+      <div class="rc">阿斯旺<small>ASWAN</small></div>
+    </div>
+    <p class="lead serif" style="font-size:13.5px">沿着尼罗河逆流而上，就是沿着时间往回走。</p>
+
+    <div class="days" id="days"></div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="kicker">TWO MASTERS</div>
+    <h2 class="st serif">双导师 · <em>四场讲座</em></h2>
+    <p class="lead serif" style="font-size:13.5px">世界史搭骨架，艺术史给血肉。每座神庙抵达之前，先在讲堂里遇见它。</p>
+    <div class="masters">
+      <div class="master">
+        <div class="avatar">W</div>
+        <div class="rt">WORLD HISTORY</div>
+        <div class="nm">世界史导师</div>
+        <div class="ds">从法老的国家逻辑讲到托勒密王朝的终局——把埃及放回地中海文明的大棋盘。</div>
+      </div>
+      <div class="master">
+        <div class="avatar">A</div>
+        <div class="rt">ART HISTORY</div>
+        <div class="nm">艺术史导师</div>
+        <div class="ds">从正面律到阿玛尔纳革命，教你看懂每一尊像、每一根柱子里的「为什么」。</div>
+      </div>
+    </div>
+    <div class="lectures" id="lectures"></div>
+  </div>
+</section>
+
+<section id="tours" style="padding-top:10px">
+  <div class="wrap">
+    <div class="kicker">DATES & PRICE</div>
+    <h2 class="st serif">两个<em>团期</em></h2>
+    <div class="tours">
+      <div class="tour">
+        <div class="th"><div class="tn">NEW YEAR · 跨年团</div><div class="td serif">12.26 — 1.4</div></div>
+        <div class="tb">
+          <div class="li">在尼罗河游轮上跨年，神庙星空下迎接新年</div>
+          <div class="li">10 天 · 开罗进阿斯旺出</div>
+          <div class="li">全程五星 + 尼罗河豪华游轮</div>
+        </div>
+      </div>
+      <div class="tour">
+        <div class="th"><div class="tn">SPRING FESTIVAL · 春节团</div><div class="td serif">2.9 — 2.18</div></div>
+        <div class="tb">
+          <div class="li">春节错峰，卢克索与阿斯旺深度双城</div>
+          <div class="li">10 天 · 同线路同讲座</div>
+          <div class="li">全程五星 + 尼罗河豪华游轮</div>
+        </div>
+      </div>
+    </div>
+    <div class="eb">
+      <div class="e1">✦ 早鸟立减 ¥1,000 ✦</div>
+      <div class="e2" id="ebTxt">10 月 31 日截止 · 剩余名额有限</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <div class="wrap">
+    <div class="kicker">JOIN US</div>
+    <h2 class="big serif">想真正看懂埃及古文明，<br>回复 <em>【团期+埃及】</em></h2>
+    <button class="copybtn" id="btnCopy">复制口令 · 领取详细路书</button>
+    <div class="h">路书含逐日行程 / 讲座大纲 / 住宿游轮详情 / 报名方式</div>
+  </div>
+</section>
+
+<footer>
+  <div class="f1">洞穴文化 · 文明溯源系列</div>
+  <div class="f2">As long as the Nile flows, nothing truly ends.</div>
+</footer>
+
+<div id="toast"></div>
+
+<script>
+const DAYS=[
+ ['D1','开罗集结','抵达开罗，接机入住。欢迎晚宴上认识同行的人，第一讲在晚餐后开灯开讲。','神权与法老：古埃及的国家逻辑'],
+ ['D2','吉萨 · 金字塔群','哈夫拉河谷神庙 → 狮身人面像 → 胡夫金字塔内部入墓。黄昏留在高原上看声光秀。',null],
+ ['D3','开罗 · 博物馆日','埃及博物馆整层深度导览，图坦卡蒙金面具前停留半小时。','象形文字与亡灵书：埃及人如何书写永恒'],
+ ['D4','飞卢克索','内陆飞抵卢克索，傍晚进卡尔纳克神庙——在游客散去的黄昏，多留一柱厅的时间。',null],
+ ['D5','帝王谷','哈特谢普苏特神庙、门农巨像、帝王谷王室墓葬线；晚上登船，尼罗河巡游开始。',null],
+ ['D6','卢克索神庙','上午补卢克索神庙，午后起航。船行即课堂：两岸就是一部活的历史图卷。',null],
+ ['D7','康翁波','双神庙半日，其余时间甲板航行。','神庙建筑：石头如何搭建宇宙'],
+ ['D8','埃德富','鹰神荷鲁斯神庙——全埃及保存最完整的神庙。傍晚尼罗河落日晚茶。',null],
+ ['D9','阿斯旺 · 阿布辛贝','凌晨出发阿布辛贝（拉美西斯二世巨像），回程菲莱神庙。','从罗塞塔石碑到图坦卡蒙：埃及学的两百年'],
+ ['D10','阿斯旺散伙','努比亚村早餐，送机。倒影收进行囊，各自回家。',null]
+];
+const LEC=[
+ ['Ⅰ','神权与法老','法老为什么既是王又是神？从纳尔迈调色板到埃赫那吞的宗教改革，看懂古埃及的国家底层设计。'],
+ ['Ⅱ','象形文字与亡灵书','罗塞塔石碑如何被破译？《亡灵书》不是咒语合集，而是一整套关于「如何不死」的工程。'],
+ ['Ⅲ','神庙建筑：石头如何搭建宇宙','轴线、高差与光——神庙的平面就是一部创世神话的说明书。'],
+ ['Ⅳ','埃及学的两百年','从商博良到图坦卡蒙墓，一个学科如何诞生，也如何被偏见塑造。']
+];
+const $=id=>document.getElementById(id);
+const FIGS={3:['img/pyra.png','GIZA · 吉萨金字塔群的清晨'],5:['img/hall.png','KARNAK · 卡纳克神庙的柱厅'],8:['img/ship.png','NILE · 帆船与落日']};
+$('days').innerHTML=DAYS.map(d=>
+ '<div class="day"><div class="dn"><b>'+d[0].slice(1)+'</b><span>DAY</span></div>'+
+ '<div class="dc"><div class="pl">'+d[1]+'<small>'+d[0]+'</small></div>'+
+ '<div class="ac">'+d[2]+'</div>'+
+ (d[3]?'<span class="le">✦ 讲座 · '+d[3]+'</span>':'')+
+ '</div></div>'+(FIGS[d[0].slice(1)*1]?'<figure class="fig"><img src="'+FIGS[d[0].slice(1)*1][0]+'" loading="lazy" alt=""><figcaption>'+FIGS[d[0].slice(1)*1][1]+'</figcaption></figure>':'')).join('');
+$('lectures').innerHTML=LEC.map(l=>
+ '<div class="lec"><div class="ln">'+l[0]+'</div><div><div class="lt">'+l[1]+'</div>'+
+ '<div class="ld">'+l[2]+'</div></div></div>').join('');
+/* countdown */
+(function(){
+  const end=new Date('2026-10-31T23:59:59+08:00');
+  const now=new Date();
+  const d=Math.max(0,Math.ceil((end-now)/86400000));
+  $('ebTxt').innerHTML='早鸟倒计时 <b>'+d+'</b> 天 · 10 月 31 日截止 · 名额有限';
+})();
+/* copy */
+$('btnCopy').addEventListener('click',()=>{
+  const txt='团期+埃及';
+  const done=()=>{
+    const t=$('toast');t.textContent='口令已复制 ✦ 发给顾问即可领取路书';
+    t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(done).catch(()=>{fallback();done();});
+  }else{fallback();done();}
+  function fallback(){
+    const ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);
+    ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);
+  }
+});
+</script>
+</body>
+</html>
